@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de CPF e CNPJ válidos</h1>
+        <form name="form_main">
+            <label for="numero">Número:</label> 
+            <input name="numero" id="numero" size="20" type="text" /><br />
+            <span>
+            <input name="tipo" value="cpf" id="cpf" checked="checked" type="radio">
+            <label>CPF</label>
+            </span> 
+            <span>
+            <input name="tipo" value="cnpj" id="cnpj" type="radio" />
+            <label>CNPJ</label> 
+            </span>
+            <span>
+            <input name="mascara" value="mascara" id="mascara" type="checkbox">
+            <label>Mascara</label>
+            </span>
+            <span> 
+            <input name="button" value="Gerar" onclick="gera()" type="button">
+            </span>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
